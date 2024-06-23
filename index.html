@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- High Scores -->
+    <div class="scores"><a href="highscores.html">View Highscores</a></div>
+    <!-- Time Remaining -->
+    <div class="timer">Time Remaining: <span id="time">0</span></div>
+    <!-- Start Page -->
+    <div class="wrapper">
+      <div id="start-screen" class="start">
+        <h1>JavaScript Quiz</h1>
+        <p>
+          Solve 10 JavaScript questions before time runs out. Any incorrect answers will reduce your
+          time by 10 seconds. At the end, post your high score and compare to others. 
+        </p>
+        <button id="start">Start</button>
+      </div>
+      <!-- Questions -->
+      <div id="questions" class="hide">
+        <h2 id="current"></h2>
+        <div id="choices" class="choices"></div>
+      </div>
+      <!-- Game Over Screen -->
+      <div id="game-over" class="hide">
+        <h2>Game Over!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+          Enter your initials here: <input type="text" id="initials" max="3" />
+          <button id="submit">Submit</button>
+        </p>
+      </div>
+      <div id="response" class="response hide"></div>
+    </div>
+    <!-- Scripts -->
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

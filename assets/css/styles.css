@@ -1,0 +1,81 @@
+body {
+  font-family: Arial;
+}
+
+a {
+  color: purple;
+}
+
+a:hover {
+  color: violet;
+}
+
+button {
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 100%;
+  background-color: purple;
+  border-radius: 5px;
+  padding: 2px 10px;
+  color: white;
+  border: 0;
+}
+
+button:hover {
+  background-color: violet;
+}
+
+.choices button {
+  display: block;
+}
+
+
+ol {
+  padding-left: 0px;
+  max-height: 400px;
+
+}
+
+li {
+  padding: 5px;
+
+}
+
+li:nth-child(odd) {
+  background-color: white;
+}
+
+.wrapper {
+  margin: 100px auto 0 auto;
+  max-width: 600px;
+}
+
+.hide {
+  display: none;
+}
+
+.start {
+  text-align: center;
+}
+
+.scores {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.response {
+  font-style: italic;
+
+  margin-top: 20px;
+  padding-top: 10px;
+  color: gray;
+  border-top: 2px solid lightgray;
+}
+
+.timer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
